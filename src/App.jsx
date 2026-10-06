@@ -9,6 +9,7 @@ import {
 
 import AdminDashBoard from "./DashBoard/Pages/AdminDashBoard";
 import Login from "./Components/Common/Login";
+import Employee from "./Components/Common/Employee";
 
 function App() {
   const [collapsed, setCollapsed] = useState(false);
@@ -47,6 +48,9 @@ function App() {
         >
           {/* Dashboard */}
           <Route path="/dashboard" element={<AdminDashBoard />} />
+
+          {/* Employee Page */}
+          <Route path="/employees" element={<Employee />} />
         </Route>
 
       </Routes>
